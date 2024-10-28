@@ -8,9 +8,7 @@
 - [Change and Customize](#change-and-customize-every-section-according-to-your-need)
 - [Deployment](#deployment)
 - [Technologies Used](#technologies-used)
-- [Illustrations](#illustrations)
-- [For the Future](#for-the-future)
-- [Contributors](#project-maintainers)
+
 
 ## Portfolio Sections
 ✔️ Summary and About me\
@@ -23,26 +21,8 @@
 ✔️ Contact me\
 ✔️ GitHub Profile
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
 
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer or use [Docker](https://www.docker.com/products/docker-desktop).
-
-```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-```
-### Docker Commands
-
-```
-1) BUILD IMAGE : docker build -t developerfolio:latest .
-2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
-```
 
 
 ## How To Use 
@@ -99,30 +79,7 @@ GITHUB_USERNAME = "YOUR GITHUB USERNAME"
 USE_GITHUB_DATA = "true"
 ```
 
-Set `showGithubProfile` to true or false to show Contact Profile using GitHub, defaults to false.
 
-**Warning:** Treat your tokens like passwords and keep them secret. When working with the API, use tokens as environment variables instead of hardcoding them into your programs.
-
-Note: Open Source Projects section only show pinned items of your GitHub.
-If you are seeing something as shown below, follow these [instructions](https://docs.github.com/en/enterprise/2.13/user/articles/pinning-items-to-your-profile).
-
-![ERROR](https://i.imgur.com/Hj6mu1K.png)
-
-
-## Linking blogs section to Medium
-
-Optionally, you can link the blogs section to your medium user account:
-
-* Inside the .env file, add key `MEDIUM_USERNAME` and assign your Medium username
-
-```env
-// .env
-MEDIUM_USERNAME = "YOUR MEDIUM USERNAME"
-```
-
-* For Github Action, change the environment variable `MEDIUM_USERNAME` in `.github/workflows/deploy.yml`
-
-Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Medium blogs, defaults to true.
 
 ## Change and customize every section according to your need.
 
