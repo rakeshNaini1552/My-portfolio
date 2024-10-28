@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
   "Blockchain Engineer | Full stack developer, I am passionate about building user-centric applications and constantly seek opportunities to learn and grow in the tech landscape. Feel free to explore my projects and connect with me on LinkedIn or GitHub!"),
   resumeLink:
-    "https://docs.google.com/document/d/1Tct_NTn-xNsVXyLTcDQL991aPtM4Axc0pa1ZPFHsK_s/edit?usp=sharing", // Set to empty to hide the button
+    "https://rxresu.me/rakeshnaini1552/my-resume", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
