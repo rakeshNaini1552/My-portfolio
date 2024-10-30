@@ -135,7 +135,7 @@ const educationInfo = {
       logo: require("./assets/images/umkc-logo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "January 2023 - December 2024",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "",
       descBullets: [
         "GPA: 3.9/4.0"
       ]
@@ -189,16 +189,16 @@ const workExperiences = {
 
 const bigProjects = {
   title: "My Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "PROJECTS THAT I HAVE WORKED ON!",
   projects: [
     {
-      image: require("./assets/images/ctsLogo.png"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/lea.png"),
+      projectName: "LEA- judidciary case management system",
+      projectDesc: " user-friendly web application for clients and lawyers to manage cases with features like video calls and chat-box.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/LEA-judiciary-management-system"
         }
         //  you can add extra buttons here.
       ]
@@ -271,6 +271,19 @@ const achievementSection = {
           url: "https://www.udemy.com/certificate/UC-e766428c-7b10-474d-a415-06ce23411489/"
         }
       ]
+    },
+    {
+      title: "Software Engineering Job Simulation - JPMorgan Chase & Co's",
+      subtitle:
+        "Proficiency in Apache Kafka, ResfulAPI, Spring, H2.",
+      image: require("./assets/images/kafka.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "View certificate of completion",
+          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/E6McHJDKsQYh79moz_JPMorgan%20Chase%20&%20Co_eTyfdZkqdb3o2QAo4_1729731006939_completion_certificate.pdf"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -292,7 +305,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? do drop a mail.",
-  number:"+1(913)257-0088",
+  number:"",
   email_address: "rakeshnaini155@gmail.com"
 };
 
