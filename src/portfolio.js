@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -20,21 +20,21 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Rakesh N",
+  username: "Rakesh Naini",
   title: "Hi all, I'm Rakesh Naini",
   subTitle: emoji(
-  "Blockchain Engineer | Full stack developer, I am passionate about building user-centric applications and constantly seek opportunities to learn and grow in the tech landscape. Feel free to explore my projects and connect with me on LinkedIn or GitHub!"),
+  "Full stack developer, I am passionate about building user-centric applications and constantly seek opportunities to learn and grow in the tech landscape. Feel free to explore my projects and connect with me on LinkedIn or GitHub!"),
   resumeLink:
-    "https://rxresu.me/rakeshnaini1552/my-resume", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/rakeshNaini1552",
-  linkedin: "https://www.linkedin.com/in/rakesh-naini",
-  gmail: "rakeshnaini155@gmail.com",
+  github: "https://github.com/rakesh-naini",
+  linkedin: "https://www.linkedin.com/in/rakesh-naini591/",
+  gmail: "rakeshn1552@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -42,7 +42,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Blockchain Engineer | FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -141,11 +141,11 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Vardhaman College of Engineering",
-      logo: require("./assets/images/vardhaman-logo.jpg"),
+      schoolName: "Jawaharlal Nehru Technological University",
+      logo: require("./assets/images/jntu.png"),
       subHeader: "Bachelor of Technology in Computer Science",
-      duration: "June 2017 - August 2021",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      duration: "",
+      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security and Advance Operating Systems",
       descBullets: ["GPA: 3.6/4.0"]
     }
   ]
@@ -158,27 +158,74 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Blockchain Engineer",
-      company: "Cognizant",
-      companylogo: require("./assets/images/ctsLogo.png"),
-      date: "Jul 2021 – Sep 2022",
-      desc: "Performed testing for DAML-based Blockchain product for analysing scalability, performance, and sustainability using Python",
+      role: "Sr. Software Developer",
+      company: "Deutsche Bank",
+      companylogo: require("./assets/images/Deutsche.png"),
+      date: "Sep 2023 – Present",
+      desc: "Contributed to a Credit Management System for a leading financial institution, streamlining the credit lifecycle from applications to repayment tracking. Developed user-friendly interfaces for managing credit activities and implemented secure, real-time back-end services. Leveraged cloud technologies to ensure scalability, availability, and performance during peak usage.",
       descBullets: [
-        "Provided Azure as an environment to run blockchain tests which led to a 19% increase in customer satisfaction scores",
-        "Automated blockchain tests for Azure and AWS that helped the client rely on cloud platforms for up to 40%",
-        "Managed and documented support ticket requests, ensuring timely resolution and client notification"
+        // "Developed robust microservices using Spring Boot and Java 11 to modularize workflows, enhancing system scalability",
+        // "Integrated Apache Kafka for seamless real-time messaging between microservices, ensuring efficient data processing",
+        // "Deployed containerized applications using Docker and orchestrated services with Kubernetes, improving deployment efficiency by 40%",
+        // "Optimized UI responsiveness using Bootstrap and CSS3 to deliver a visually appealing and mobile-friendly user experience",
+        // "Improved backend data storage and retrieval using MongoDB for unstructured data and MySQL for relational data",
+        // "Leveraged AWS cloud services, including S3 for document storage and EC2 for backend hosting, ensuring high availability",
+        // "Created dynamic RESTful APIs adhering to OpenAPI specifications, ensuring smooth interactions between frontend and backend"
       ]
     },
     {
-      role: "Full stack Intern - Java",
-      company: "Cognizant",
-      companylogo: require("./assets/images/ctsLogo.png"),
-      date: "Feb 2021 – Jul 2021",
-      desc: "Developed a web portal for automating schedules for medical representatives utilizing Spring Boot for backend and JSP for frontend",
+      role: "Software Developer",
+      company: "Centene Corporation",
+      companylogo: require("./assets/images/Centene.png"),
+      date: "Nov 2021 – Aug 2023",
+      desc: "Developed a virtual consultation platform for a healthcare client, featuring secure appointment scheduling, real-time chat and video consultations, and efficient patient record management.",
       descBullets:[
-        "Integrated an in-memory H2 database to manage medicine stock and handle HTTP requests/responses efficiently",
-        "Assisted in content and functionality updates for internal and client websites"
-
+        // "Designed and implemented RESTful APIs using Spring Boot and Spring MVC, ensuring scalability and performance",
+        // "Developed backend systems leveraging Java 11 and frameworks like Hibernate for efficient ORM and database interaction",
+        // "Optimized application performance by integrating caching mechanisms with Redis and MongoDB",
+        // "Implemented asynchronous message processing using RabbitMQ and Kafka for distributed system communication",
+        // "Integrated serverless functions on AWS Lambda to handle event-driven processes efficiently",
+        // "Configured logging and monitoring tools such as log4j to ensure error tracking and system performance monitoring",
+        // "Created responsive and interactive web pages using HTML5, CSS3, and JavaScript, following best UX/UI practices",
+        // "Designed and maintained relational databases with MySQL, optimizing queries for better performance",
+        // "Implemented NoSQL solutions with MongoDB to support flexible and scalable data models",
+        // "Automated build and deployment pipelines using Jenkins and Maven, ensuring rapid and reliable software releases"
+      ]
+    },
+    {
+      role: "Software Developer",
+      company: "Save A Lot",
+      companylogo: require("./assets/images/savealot.png"),
+      date: "Aug 2019 – Oct 2021",
+      desc: "Contributed to a full-stack enterprise application that streamlined operations and enhanced customer engagement. Developed responsive user interfaces with React and Redux, implemented J2EE back-end services, and optimized database performance with SQL and PL/SQL. Leveraged Kubernetes and Docker for scalable, efficient deployment, improving productivity and customer satisfaction.",
+      descBullets:[
+        // "Designed and implemented responsive web interfaces using React, Redux, and JavaScript, ensuring a seamless user experience across devices",
+        // "Improved application performance by optimizing React components and minimizing unnecessary re-renders",
+        // "Created interactive and reusable React components, standardizing design and accelerating development processes",
+        // "Implemented RESTful and SOAP API integrations to dynamically update front-end data in real time, enhancing user engagement",
+        // "Developed robust server-side components using J2EE and Servlets, ensuring reliable business logic and API services",
+        // "Wrote optimized SQL queries and PL/SQL scripts for data manipulation, reducing query execution time by 30%",
+        // "Utilized Kubernetes and Docker to containerize and orchestrate deployment, achieving scalability and fault tolerance",
+        // "Collaborated using JIRA for task management, sprint planning, and bug tracking, ensuring timely project delivery",
+        // "Created UML diagrams to document system architectures, improving team understanding of workflows and designs",
+        // "Improved backend performance and reduced system response times by 40% through efficient database query tuning"
+      ]
+    },
+    {
+      role: "Software Engineer",
+      company: "BigBasket",
+      companylogo: require("./assets/images/bigbasket.png"),
+      date: "Dec 2017 – Jul 2019",
+      desc: "Developed a web application that streamlined client business processes, enhancing efficiency and usability. Contributed to both front-end and back-end, enabling real-time communication, reliable data management, and automated deployment. Improved system performance, reduced errors, and accelerated feature delivery, boosting user satisfaction and productivity.",
+      descBullets:[
+        // "Developed a robust web application using Java 8, J2EE, and Servlets, ensuring seamless integration between client-side and server-side components",
+        // "Implemented dynamic and responsive user interfaces using React, Redux, and HTML/JavaScript, enhancing user experience across devices",
+        // "Designed and optimized relational databases with MySQL, SQL, and PL/SQL for efficient data management and retrieval",
+        // "Integrated SOAP Web Services and JMS to enable real-time communication and ensure interoperability across distributed systems",
+        // "Containerized applications using Docker and deployed them on Kubernetes clusters to ensure scalability, reliability, and portability",
+        // "Collaborated effectively in Agile sprints using Jira for task tracking and GIT for version control to streamline workflows",
+        // "Deployed secure and scalable applications on Apache Tomcat servers, ensuring high availability and performance",
+        // "Resolved performance bottlenecks by optimizing JDBC connections and SQL queries, improving database response time by 30%",
       ]
     }
   ]
@@ -198,7 +245,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit project repo",
-          url: "https://github.com/rakeshNaini1552/LEA-judiciary-management-system"
+          url: "https://github.com/rakesh-naini/Judiciary-case-management-system"
         }
         //  you can add extra buttons here.
       ]
@@ -245,7 +292,7 @@ const techStack = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -260,15 +307,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Full-Stack Web Developer",
+      title: "AWS certified - Developer Associate",
       subtitle:
-        "Proficiency in Node, React, PostgreSQL, Web3 and DApps.",
-      image: require("./assets/images/fullStack.png"),
-      imageAlt: "Google Assistant Action Logo",
+        " proficiency in writing applications with AWS service APIs, AWS CLI, and SDKs; using containers; and deploying with a CI/CD pipeline. Badge owners are able to develop, deploy, and debug cloud-based applications that follow AWS best practices.",
+      image: require("./assets/images/aws.png"),
+      imageAlt: "",
       footerLink: [
         {
           name: "View certificate of completion",
-          url: "https://www.udemy.com/certificate/UC-e766428c-7b10-474d-a415-06ce23411489/"
+          url: "https://www.credly.com/badges/35822e6a-3a74-4508-884b-d89367f19f39/linked_in?t=sp9bsb"
         }
       ]
     },
@@ -305,8 +352,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? do drop a mail.",
-  number:"",
-  email_address: "rakeshnaini155@gmail.com"
+  number:"+1(913)717-9270",
+  email_address: "rakeshn1552@gmail.com"
 };
 
 
