@@ -32,9 +32,9 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/rakesh-naini",
-  linkedin: "https://www.linkedin.com/in/rakesh-naini591/",
-  gmail: "rakeshn1552@gmail.com",
+  github: "https://github.com/rakeshNaini1552",
+  linkedin: "https://www.linkedin.com/in/rakeshn9182/",
+  gmail: "rakeshmudhiraj591@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -158,74 +158,58 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Sr. Software Developer",
-      company: "Deutsche Bank",
-      companylogo: require("./assets/images/Deutsche.png"),
-      date: "Sep 2023 – Present",
-      desc: "Contributed to a Credit Management System for a leading financial institution, streamlining the credit lifecycle from applications to repayment tracking. Developed user-friendly interfaces for managing credit activities and implemented secure, real-time back-end services. Leveraged cloud technologies to ensure scalability, availability, and performance during peak usage.",
+      role: "Java Full-stack Developer",
+      company: "Bon Secours Mercy Health",
+      companylogo: require("./assets/images/bsmh.jpg"),
+      date: "Jul 2024 – Present",
+      desc: "Reduced claim lookup delays by delivering Java 11 Spring Boot REST/GraphQL APIs, scaling with Kafka + AWS EKS, and improving UI performance 35% with React 18 + Redux.",
       descBullets: [
-        // "Developed robust microservices using Spring Boot and Java 11 to modularize workflows, enhancing system scalability",
-        // "Integrated Apache Kafka for seamless real-time messaging between microservices, ensuring efficient data processing",
-        // "Deployed containerized applications using Docker and orchestrated services with Kubernetes, improving deployment efficiency by 40%",
-        // "Optimized UI responsiveness using Bootstrap and CSS3 to deliver a visually appealing and mobile-friendly user experience",
-        // "Improved backend data storage and retrieval using MongoDB for unstructured data and MySQL for relational data",
-        // "Leveraged AWS cloud services, including S3 for document storage and EC2 for backend hosting, ensuring high availability",
-        // "Created dynamic RESTful APIs adhering to OpenAPI specifications, ensuring smooth interactions between frontend and backend"
+      //   "Designed and delivered RESTful and GraphQL APIs in Java 11 Spring Boot, cutting insurance claim lookup times by 40% and improving SLA compliance across 12+ hospital networks.",
+      //   "Built React 18 components with Redux and TypeScript, reducing UI payload size by 35% for care managers handling patient eligibility and claims data.",
+      //   "Architected event-driven microservices with Apache Kafka and AWS EKS, delivering asynchronous claim updates with 99.95% uptime and complete audit trails.",
+      //   "Modeled complex insurance data in PostgreSQL and MongoDB Atlas; implemented indexed joins, sequences, and TTL policies for HIPAA-driven retention compliance.",
+      //   "Involved in design reviews, mentored junior developers on Spring Security 6, OAuth2/JWT, and RBAC enforcement for PHI access control."
       ]
     },
     {
-      role: "Software Developer",
-      company: "Centene Corporation",
-      companylogo: require("./assets/images/Centene.png"),
-      date: "Nov 2021 – Aug 2023",
-      desc: "Developed a virtual consultation platform for a healthcare client, featuring secure appointment scheduling, real-time chat and video consultations, and efficient patient record management.",
+      role: "Java Full-stack Developer",
+      company: "Bank of Montreal",
+      companylogo: require("./assets/images/bmo.jpg"),
+      date: "May 2023 – Jun 2024",
+      desc: "Solved high-latency trade reconciliation by developing Java 17 Spring Boot + Spring Batch microservices, integrating with PostgreSQL/Oracle, and building React monitoring tools deployed on Azure AKS.",
       descBullets:[
-        // "Designed and implemented RESTful APIs using Spring Boot and Spring MVC, ensuring scalability and performance",
-        // "Developed backend systems leveraging Java 11 and frameworks like Hibernate for efficient ORM and database interaction",
-        // "Optimized application performance by integrating caching mechanisms with Redis and MongoDB",
-        // "Implemented asynchronous message processing using RabbitMQ and Kafka for distributed system communication",
-        // "Integrated serverless functions on AWS Lambda to handle event-driven processes efficiently",
-        // "Configured logging and monitoring tools such as log4j to ensure error tracking and system performance monitoring",
-        // "Created responsive and interactive web pages using HTML5, CSS3, and JavaScript, following best UX/UI practices",
-        // "Designed and maintained relational databases with MySQL, optimizing queries for better performance",
-        // "Implemented NoSQL solutions with MongoDB to support flexible and scalable data models",
-        // "Automated build and deployment pipelines using Jenkins and Maven, ensuring rapid and reliable software releases"
+        // "Developed Spring Boot microservices in Java 17 for regulatory trade compliance, integrating with PostgreSQL and Oracle to support intraday reconciliation of 500K+ trades/day.",
+        // "Built secure REST APIs with Spring MVC and custom error handling; integrated OAuth2/JWT for tiered partner and internal access.",
+        // "Created Angular-free micro frontends with React for internal monitoring tools, improving load time by 30% for compliance dashboards.",
+        // "Implemented Spring Batch pipelines for high-volume Oracle data ingestion, reducing reconciliation delays by 25%.",
+        // "Managed CI/CD with Azure DevOps and Helm on AKS; enhanced rollout reliability to achieve zero-downtime deployments."
       ]
     },
     {
-      role: "Software Developer",
-      company: "Save A Lot",
-      companylogo: require("./assets/images/savealot.png"),
-      date: "Aug 2019 – Oct 2021",
-      desc: "Contributed to a full-stack enterprise application that streamlined operations and enhanced customer engagement. Developed responsive user interfaces with React and Redux, implemented J2EE back-end services, and optimized database performance with SQL and PL/SQL. Leveraged Kubernetes and Docker for scalable, efficient deployment, improving productivity and customer satisfaction.",
+      role: "Java Developer",
+      company: "VMware",
+      companylogo: require("./assets/images/vmware.jpg"),
+      date: "Aug 2021 – Sep 2022",
+      desc: "Addressed monolithic release bottlenecks by migrating to Java 11 Spring Boot microservices on PCF, optimizing MongoDB with indexes, and reducing defects via JavaScript + Bootstrap validation tools.",
       descBullets:[
-        // "Designed and implemented responsive web interfaces using React, Redux, and JavaScript, ensuring a seamless user experience across devices",
-        // "Improved application performance by optimizing React components and minimizing unnecessary re-renders",
-        // "Created interactive and reusable React components, standardizing design and accelerating development processes",
-        // "Implemented RESTful and SOAP API integrations to dynamically update front-end data in real time, enhancing user engagement",
-        // "Developed robust server-side components using J2EE and Servlets, ensuring reliable business logic and API services",
-        // "Wrote optimized SQL queries and PL/SQL scripts for data manipulation, reducing query execution time by 30%",
-        // "Utilized Kubernetes and Docker to containerize and orchestrate deployment, achieving scalability and fault tolerance",
-        // "Collaborated using JIRA for task management, sprint planning, and bug tracking, ensuring timely project delivery",
-        // "Created UML diagrams to document system architectures, improving team understanding of workflows and designs",
-        // "Improved backend performance and reduced system response times by 40% through efficient database query tuning"
+        // "Migrated a legacy monolith to Java 11 Spring Boot microservices, enabling modular deployments on PCF with centralized configuration and faster feature delivery.",
+        // "Designed backend APIs using layered Spring architecture and repository patterns; optimized MongoDB collections with compound indexes for fast environment metadata retrieval.",
+        // "Built internal validation tools in JavaScript and Bootstrap to simulate configuration payloads, reducing pre-release defects by 20%.",
+        // "Collaborated with product teams to ensure fault-tolerant service orchestration for global datacenter provisioning."
       ]
     },
     {
       role: "Software Engineer",
-      company: "BigBasket",
-      companylogo: require("./assets/images/bigbasket.png"),
-      date: "Dec 2017 – Jul 2019",
-      desc: "Developed a web application that streamlined client business processes, enhancing efficiency and usability. Contributed to both front-end and back-end, enabling real-time communication, reliable data management, and automated deployment. Improved system performance, reduced errors, and accelerated feature delivery, boosting user satisfaction and productivity.",
+      company: "Astrazeneca",
+      companylogo: require("./assets/images/astrazeneca.jpg"),
+      date: "Dec 2019 – Aug 2021",
+      desc: "Solved slow regulatory data ingestion by building Java 8 Spring Boot microservices, migrating SOAP to REST/OpenAPI, and tuning PostgreSQL + Cassandra, enabling faster audits and scalable Kubernetes deployments.",
       descBullets:[
-        // "Developed a robust web application using Java 8, J2EE, and Servlets, ensuring seamless integration between client-side and server-side components",
-        // "Implemented dynamic and responsive user interfaces using React, Redux, and HTML/JavaScript, enhancing user experience across devices",
-        // "Designed and optimized relational databases with MySQL, SQL, and PL/SQL for efficient data management and retrieval",
-        // "Integrated SOAP Web Services and JMS to enable real-time communication and ensure interoperability across distributed systems",
-        // "Containerized applications using Docker and deployed them on Kubernetes clusters to ensure scalability, reliability, and portability",
-        // "Collaborated effectively in Agile sprints using Jira for task tracking and GIT for version control to streamline workflows",
-        // "Deployed secure and scalable applications on Apache Tomcat servers, ensuring high availability and performance",
-        // "Resolved performance bottlenecks by optimizing JDBC connections and SQL queries, improving database response time by 30%",
+        // "Built Java 8 Spring Boot microservices for pharmacovigilance data ingestion, processing millions of clinical adverse event records annually.",
+        // "Developed REST APIs with Spring MVC, integrating Resilience4j for retries/fallbacks to ensure 99.9% message delivery.",
+        // "Tuned PostgreSQL and Cassandra for timestamp-indexed, high-volume audit trail queries, reducing latency by 40%.",
+        // "Migrated SOAP services to REST/OpenAPI 3, cutting inter-service communication overhead by 50%.",
+        // "Deployed containerized ingestion flows on Kubernetes with autoscaling for seasonal regulatory reporting spikes."
       ]
     }
   ]
@@ -245,7 +229,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit project repo",
-          url: "https://github.com/rakesh-naini/Judiciary-case-management-system"
+          url: "https://github.com/rakeshNaini1552/LEA-judiciary-management-system"
         }
         //  you can add extra buttons here.
       ]
@@ -352,8 +336,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? do drop a mail.",
-  number:"+1(913)717-9270",
-  email_address: "rakeshn1552@gmail.com"
+  number:"+1(469)325-3162",
+  email_address: "rakeshmudhiraj591@gmail.com"
 };
 
 
