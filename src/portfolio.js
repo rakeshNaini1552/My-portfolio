@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
   "Full stack developer, I am passionate about building user-centric applications and constantly seek opportunities to learn and grow in the tech landscape. Feel free to explore my projects and connect with me on LinkedIn or GitHub!"),
   resumeLink:
-    "", // Set to empty to hide the button
+    "https://github.com/user-attachments/files/22127029/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -268,7 +268,7 @@ const techStack = {
       progressPercentage: "85%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 
@@ -304,6 +304,19 @@ const achievementSection = {
       ]
     },
     {
+      title: "Wells Fargo Software Engineering Simulation",
+      subtitle:
+        "Proficiency in System design, ResfulAPI, Spring.",
+      image: require("./assets/images/wellsFargo.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "View certificate of completion",
+          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/nkmk7gJitYs4TBvoA/9Wvq4L2WCFQDyyPp3_nkmk7gJitYs4TBvoA_eTyfdZkqdb3o2QAo4_1754437654187_completion_certificate.pdf"
+        }
+      ]
+    },
+    {
       title: "Software Engineering Job Simulation - JPMorgan Chase & Co's",
       subtitle:
         "Proficiency in Apache Kafka, ResfulAPI, Spring, H2.",
@@ -327,7 +340,6 @@ const achievementSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Checkout my resume",
-
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };

@@ -9,6 +9,9 @@
 /coverage
 /build
 
+# Ignore resume PDF
+src/containers/greeting/resume.pdf
+
 
 # misc
 .DS_Store
