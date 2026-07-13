@@ -1,0 +1,14 @@
+@import "../../_globalColor";
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: 10000;
+  background: linear-gradient(90deg, $buttonColor, $buttonHover, $skillsColor);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 0 10px rgba(140, 67, 206, 0.6);
+  pointer-events: none;
+}

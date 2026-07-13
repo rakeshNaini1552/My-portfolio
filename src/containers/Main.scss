@@ -5,3 +5,26 @@
   color: white;
   transition: "0.1s";
 }
+
+/* The top-level shell stays transparent so the fixed aurora backdrop
+   shows through in both themes. */
+.app-shell,
+.app-shell.dark-mode {
+  background: transparent;
+  min-height: 100vh;
+}
+
+/* Text elements tagged with .dark-mode only need light text,
+   never their own dark background slab. */
+h1.dark-mode,
+h2.dark-mode,
+h3.dark-mode,
+h4.dark-mode,
+h5.dark-mode,
+h6.dark-mode,
+p.dark-mode,
+span.dark-mode,
+li.dark-mode,
+a.dark-mode {
+  background-color: transparent;
+}

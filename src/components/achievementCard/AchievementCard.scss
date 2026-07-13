@@ -18,14 +18,26 @@
   line-height: 1.5rem;
 }
 .certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  background-color: $glassLightBG;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 18px 45px rgba(20, 18, 43, 0.08);
   padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border-radius: 18px;
+  border: 1px solid $glassLightBorder;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.dark-mode.certificate-card {
+  background-color: $glassDarkBG !important;
+  border: 1px solid $glassDarkBorder;
+}
+
+.certificate-card:hover {
+  border-color: rgba(124, 58, 237, 0.4);
+  transform: translateY(-6px);
 }
 .certificate-detail-div {
   text-align: center;
@@ -56,11 +68,11 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
+  background: linear-gradient(120deg, $accentViolet, #9333ea);
+  color: #fff;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 999px;
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;

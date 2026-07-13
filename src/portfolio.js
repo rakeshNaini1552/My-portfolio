@@ -24,6 +24,15 @@ const greeting = {
   title: "Hi all, I'm Rakesh Naini",
   subTitle: emoji(
   "Full stack developer, I am passionate about building user-centric applications and constantly seek opportunities to learn and grow in the tech landscape. Feel free to explore my projects and connect with me on LinkedIn or GitHub!"),
+  roles: [
+    "Full Stack Developer",
+    "Java & Spring Boot Engineer",
+    "React / Angular Developer",
+    "AWS & Cloud Practitioner",
+    "Problem Solver"
+  ], // Rotating typewriter roles shown under the title. Set to [] to hide.
+  badge: "Open to new opportunities", // Small pill above the title. Set to "" to hide.
+  floatingChips: ["☕ Java", "⚛️ React", "☁️ AWS", "🐳 Docker"], // Chips floating around the photo. Set to [] to hide.
   resumeLink:
     "https://github.com/user-attachments/files/22127029/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true

@@ -2,14 +2,30 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
+// ===== Aurora Glass design system =====
+// core accents
+$accentViolet: #7c3aed;
+$accentVioletSoft: #a78bfa;
+$accentCyan: #22d3ee;
+$accentPink: #f472b6;
+
+// glass surfaces
+$glassLightBG: rgba(255, 255, 255, 0.66);
+$glassLightBorder: rgba(124, 58, 237, 0.14);
+$glassDarkBG: rgba(255, 255, 255, 0.045);
+$glassDarkBorder: rgba(255, 255, 255, 0.09);
+
+// signature gradient
+$auroraGradient: linear-gradient(120deg, #7c3aed, #a855f7 45%, #22d3ee);
+
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
+$buttonColor: #7c3aed;
+$buttonHover: #9333ea;
 $topButtonHover: #000;
 
 // text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
+$titleColor: #14122b;
+$textColor: #14122b;
 $subTitle: #868e96;
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
@@ -31,12 +47,12 @@ $githubProfileCardLocationTS: #ffebcd;
 $githubProfileCardBorder: #6c63ff;
 
 // light background colors
-$lightBackground1: #fff;
+$lightBackground1: #fbfaff;
 $lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
+$lightBackground3: #f5f2fb;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: #0a0e1c;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -69,12 +85,12 @@ $headerHoverBG: #f4f4f4;
 $contactDetailHoverTS: #b5b5b5;
 
 // misc backgrounds
-$progressBarSpanBG: #aaa5ff;
+$progressBarSpanBG: #a78bfa;
 $iconBackground: #333;
 $appHeaderBG: #282c34;
 
 // misc colors
-$skillsColor: #645beb;
+$skillsColor: #7c3aed;
 $appLink: #09d3ac;
 
 // social media icons

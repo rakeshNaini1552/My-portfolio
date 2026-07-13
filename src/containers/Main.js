@@ -12,6 +12,9 @@ import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+import ScrollProgress from "../components/scrollProgress/ScrollProgress";
+import CustomCursor from "../components/customCursor/CustomCursor";
+import AuroraBackground from "../components/auroraBackground/AuroraBackground";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
@@ -40,12 +43,15 @@ const Main = () => {
   };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
+    <div className={isDark ? "dark-mode app-shell" : "app-shell"}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
           <>
+            <AuroraBackground />
+            <ScrollProgress />
+            <CustomCursor />
             <Header />
             <Greeting />
             <Skills />

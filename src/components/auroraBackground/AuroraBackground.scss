@@ -1,0 +1,119 @@
+@import "../../_globalColor";
+
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: $lightBackground1;
+}
+
+.dark-mode .aurora-bg {
+  background: radial-gradient(
+      ellipse 120% 80% at 70% -10%,
+      #171233 0%,
+      transparent 55%
+    ),
+    $darkBackground;
+}
+
+.aurora-blob {
+  position: absolute;
+  width: 46vw;
+  height: 46vw;
+  min-width: 420px;
+  min-height: 420px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.aurora-blob-1 {
+  top: -18%;
+  left: -12%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.55), transparent 65%);
+  animation: auroraDrift1 26s ease-in-out infinite alternate;
+}
+
+.aurora-blob-2 {
+  top: 20%;
+  right: -15%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.4), transparent 65%);
+  animation: auroraDrift2 32s ease-in-out infinite alternate;
+}
+
+.aurora-blob-3 {
+  bottom: -25%;
+  left: 25%;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.32), transparent 65%);
+  animation: auroraDrift3 38s ease-in-out infinite alternate;
+}
+
+.dark-mode .aurora-blob {
+  opacity: 0.28;
+}
+
+/* faint dot grid overlay */
+.aurora-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    rgba(124, 58, 237, 0.14) 1px,
+    transparent 1px
+  );
+  background-size: 34px 34px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    #000 30%,
+    transparent 75%
+  );
+}
+
+.dark-mode .aurora-grid {
+  background-image: radial-gradient(
+    rgba(167, 139, 250, 0.16) 1px,
+    transparent 1px
+  );
+}
+
+@keyframes auroraDrift1 {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(10vw, 14vh) scale(1.15);
+  }
+}
+
+@keyframes auroraDrift2 {
+  from {
+    transform: translate(0, 0) scale(1.1);
+  }
+  to {
+    transform: translate(-12vw, 10vh) scale(0.95);
+  }
+}
+
+@keyframes auroraDrift3 {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(8vw, -10vh) scale(1.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-blob {
+    animation: none;
+  }
+}

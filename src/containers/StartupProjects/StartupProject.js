@@ -3,6 +3,7 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import TiltCard from "../../components/tiltCard/TiltCard";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -35,7 +36,7 @@ export default function StartupProject() {
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
               return (
-                <div
+                <TiltCard
                   key={i}
                   className={
                     isDark
@@ -83,7 +84,7 @@ export default function StartupProject() {
                       </div>
                     ) : null}
                   </div>
-                </div>
+                </TiltCard>
               );
             })}
           </div>

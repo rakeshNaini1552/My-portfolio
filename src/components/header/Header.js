@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -19,6 +19,36 @@ function Header() {
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
   const viewResume = resumeSection.display;
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sectionIds = [
+      "skills",
+      "experience",
+      "opensource",
+      "achievements",
+      "contact"
+    ];
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {rootMargin: "-35% 0px -55% 0px"}
+    );
+    sectionIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        observer.observe(el);
+      }
+    });
+    return () => observer.disconnect();
+  }, []);
+
+  const navClass = id => (activeSection === id ? "active-link" : undefined);
 
   return (
     <Headroom>
@@ -39,31 +69,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" className={navClass("skills")}>
+                Skills
+              </a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience" className={navClass("experience")}>
+                Work Experiences
+              </a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource" className={navClass("opensource")}>
+                Open Source
+              </a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements" className={navClass("achievements")}>
+                Achievements
+              </a>
             </li>
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+              <a
+                href={greeting.resumeLink || "#resume"}
+                target={greeting.resumeLink ? "_blank" : undefined}
+                rel={greeting.resumeLink ? "noopener noreferrer" : undefined}
+              >
+                Resume
+              </a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" className={navClass("contact")}>
+              Contact Me
+            </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

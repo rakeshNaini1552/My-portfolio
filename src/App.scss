@@ -28,3 +28,39 @@
 .subTitle {
   color: $subTitle;
 }
+
+/* ===== Aurora Glass: global section headings ===== */
+.skills-heading,
+.experience-heading,
+.education-heading,
+.heading.contact-title {
+  font-weight: 800;
+  line-height: 1.25;
+  padding-bottom: 0.12em;
+  background: linear-gradient(
+    120deg,
+    $titleColor 45%,
+    $accentViolet 80%,
+    $accentCyan
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.dark-mode .skills-heading,
+.dark-mode.skills-heading,
+.dark-mode .experience-heading,
+.dark-mode .education-heading,
+.dark-mode .heading.contact-title {
+  background: linear-gradient(
+    120deg,
+    #ffffff 40%,
+    $accentVioletSoft 78%,
+    $accentCyan
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

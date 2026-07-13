@@ -1,28 +1,57 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, $accentViolet, #9333ea 55%, $accentCyan);
+  background-size: 200% 200%;
+  border: none;
   color: $textColorDark;
   font-weight: 700;
   width: max-content;
-  padding: 13px 22px;
+  padding: 14px 28px;
   margin-right: 50px;
   text-transform: uppercase;
-  border-radius: 6px;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
   text-align: center;
   text-decoration: none;
   display: block;
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   cursor: pointer;
+  box-shadow: 0 12px 32px rgba(124, 58, 237, 0.35);
   transition: all 0.3s ease-in-out 0s;
 }
+
+/* shine sweep */
+.main-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
+  background-position: 100% 50%;
+  color: $textColorDark;
+  box-shadow: 0 16px 44px rgba(124, 58, 237, 0.5);
   transform: translateY(-3px);
+  transition: all 0.3s ease 0s;
+}
+
+.main-button:hover::after {
+  left: 120%;
 }
 .project-button {
   display: flex;
