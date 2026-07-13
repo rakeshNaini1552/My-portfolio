@@ -167,10 +167,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Senior Software Engineer",
+      company: "Walmart",
+      companylogo: require("./assets/images/walmart.jpg"),
+      date: "Sep 2025 – Present",
+      desc: "Leading backend engineering for Sam's Club fulfillment and the Transactions Backend (Cart/Checkout), building event-driven microservices with Java 17/21, Spring Boot, Kafka, and Azure Cosmos DB to handle 50K+ orders/day at scale.",
+      descBullets: [
+      ]
+    },
+    {
       role: "Java Full-stack Developer",
       company: "Bon Secours Mercy Health",
       companylogo: require("./assets/images/bsmh.jpg"),
-      date: "Jul 2024 – Present",
+      date: "Jul 2024 – Sep 2025",
       desc: "Reduced claim lookup delays by delivering Java 11 Spring Boot REST/GraphQL APIs, scaling with Kafka + AWS EKS, and improving UI performance 35% with React 18 + Redux.",
       descBullets: [
       //   "Designed and delivered RESTful and GraphQL APIs in Java 11 Spring Boot, cutting insurance claim lookup times by 40% and improving SLA compliance across 12+ hospital networks.",
