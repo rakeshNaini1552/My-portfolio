@@ -241,17 +241,74 @@ const bigProjects = {
   subtitle: "PROJECTS THAT I HAVE WORKED ON!",
   projects: [
     {
+      projectName: "JobPilot Platform",
+      projectDesc: "Cloud-hosted, multi-user AI job-search platform that discovers jobs daily, matches and ranks them against resumes with AI, generates tailored resumes/cover letters/recruiter messages, tracks applications through an ATS-style pipeline, and exposes a RAG-powered chat assistant. Built as a modular monolith with FastAPI, SQLAlchemy 2, Celery, PostgreSQL + pgvector, Redis, and a React + TypeScript + MUI frontend.",
+      footerLink: [
+        {
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/jobpilot-platform"
+        }
+      ]
+    },
+    {
+      projectName: "Distributed Checkout Platform",
+      projectDesc: "AI-powered, event-driven microservices platform built with Spring Boot, FastAPI, React, and Kafka. Implements a choreography-based saga pattern and LangChain-powered AI recommendations, fully containerized with Docker Compose.",
+      footerLink: [
+        {
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/distributed-checkout-platform"
+        }
+      ]
+    },
+    {
+      projectName: "Review Sentiment Analysis",
+      projectDesc: "Full-stack NLP sentiment analysis app that classifies restaurant reviews as positive or negative, with two interchangeable model backends (DistilBERT and Naive Bayes) selectable from a React/Vite UI, served via a FastAPI REST API.",
+      footerLink: [
+        {
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/review-sentiment-analysis"
+        },
+        {
+          name: "Live Demo",
+          url: "https://review-sentiment-analysis-lac.vercel.app/"
+        }
+      ]
+    },
+    {
+      projectName: "Image Caption Generator (BLIP + LSTM)",
+      projectDesc: "Full-stack image captioning application generating natural language descriptions from images, powered by a pretrained BLIP model and a custom-trained LSTM+CNN model, with a FastAPI backend and React frontend.",
+      footerLink: [
+        {
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/Image-Caption-Generator-BLIP-LSTM"
+        },
+        {
+          name: "Live Demo",
+          url: "https://image-caption-generator-blip-lstm.vercel.app/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/lea.png"),
-      projectName: "LEA- judidciary case management system",
-      projectDesc: " user-friendly web application for clients and lawyers to manage cases with features like video calls and chat-box.",
+      projectName: "LEA - Judiciary Case Management System",
+      projectDesc: "User-friendly web application for clients and lawyers to manage cases with features like video calls and chat-box.",
       footerLink: [
         {
           name: "Visit project repo",
           url: "https://github.com/rakeshNaini1552/LEA-judiciary-management-system"
         }
-        //  you can add extra buttons here.
       ]
     },
+    {
+      projectName: "Pharmacy Medicine Supply Management System",
+      projectDesc: "Java microservices-based system for managing pharmacy medicine supply chains, built as 5 independently deployable Spring services.",
+      footerLink: [
+        {
+          name: "Visit project repo",
+          url: "https://github.com/rakeshNaini1552/pharmacy-medicine-supply-management-system"
+        }
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
